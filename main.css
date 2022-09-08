@@ -124,6 +124,7 @@ small, .text_small {font-size: 0.75rem;}
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 ul {
@@ -138,9 +139,16 @@ ul {
   background-color: #FF8B00;
   color: white;
 }
+.btn-primary:hover {
+  background-color: rgb(198 117 28);
+}
 .btn-secondary {
   border: 3px solid white;
   color: white;
+}
+.btn-secondary:hover {
+  background-color: white;
+  color: #FF8B00;
 }
 /* END GLOBAL STYLES */
 
@@ -229,5 +237,72 @@ nav a {
 .services {
   display: flex;
   justify-content: center;
+  position: relative;
+  padding: 4em 0;
+}
+.services-copy {
+  margin-bottom: 6em;
+}
+.services-copy a {
+  margin: 2em 0;
+}
+.services-copy p {
+  margin-bottom: 3em;
+}
+.services-info {
+  margin-left: 30em;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.services-pic {
+  position: absolute;
+  left: 40px;
+  top: 20px;
+}
+.services-box {
+  max-width: 440px
+}
+.services-box a {
+  color: #b3b3b3;
+}
+.services-box hr {
+  height: 3px;
+  background-color: #FF8B00;
+  border: none;
+  width: 20px;
+  margin: 0;
+}
+.services-box a:hover {
+  color: #FF8B00;
 }
 /* END services section */
+
+/* clients section */
+.clients {
+  width: 1440px;
+  margin: 0 auto;
+}
+.clients-copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.clients-logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.clients-logos img {
+  height: 10em;
+  margin: 5em;
+  opacity: 50%;
+  filter: grayscale(100%);
+}
+
+/* END clients section */
