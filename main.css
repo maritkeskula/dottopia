@@ -295,14 +295,18 @@ nav a {
 .clients-logos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
 }
 .clients-logos img {
   height: 10em;
-  margin: 5em;
   opacity: 50%;
+  margin: 5em;
   filter: grayscale(100%);
 }
-
+.item {
+  display: flex;
+  justify-content: center;
+}
 /* END clients section */
