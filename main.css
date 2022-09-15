@@ -80,6 +80,10 @@ select {
 
 @import url('https://fonts.googleapis.com/css?family=MuseoModerno:400');
 
+html, body {
+  overflow-x: hidden;
+}
+
 html {font-size: 100%;} /*16px*/
 
 body {
@@ -310,3 +314,69 @@ nav a {
   justify-content: center;
 }
 /* END clients section */
+
+/* responsive */
+/*extra small devices (phones)*/
+@media only screen and (max-width: 600px) {
+  /*fonts*/
+  .hero-slogan h1 {
+    font-size: 4em;
+  }
+  .hero-slogan p {
+    font-size: 1.7em;
+  }
+  /*END fonts*/
+  header {
+    width: auto;
+  }
+  .intro {
+    height: 100%;
+    padding: 2em 0.5em;
+  }
+  .container {
+    width: auto;
+    margin: 0;
+  }
+  .intro-btn {
+    display: flex;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .services-pic {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+  }
+  .services-pic img {
+    width: 8em;
+  }
+  .services-info {
+    margin: 10px;
+  }
+  .services-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .clients {
+    width: auto;
+  }
+  .clients-copy {
+    flex-direction: column;
+    padding: 0.5em;
+    align-items: flex-start;
+  }
+  .clients-logos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+  }
+  .clients-logos img {
+    height: 5em;
+    margin: 0;
+  }
+}
+/* END responsive */
